@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="extensao">
+	<!-- Elimina cache -->
+	<meta http-Equiv="Cache-Control" Content="no-cache" />
+	<meta http-Equiv="Pragma" Content="no-cache" />
+	<meta http-Equiv="Expires" Content="0" />
+    
+  
+
+
+    <title>Egressos IFSP</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--CDN JQuery
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+-->
+	<!--Altera tamanho iframe com base conteudo-->
+    <script type="text/javascript">
+        function resizeIframe(iframe) {
+            iframe.height = '';
+            iframe.height = iframe.contentWindow.document.body.scrollHeight+"px";
+		       
+        }		
+		
+        //user goes back/foward
+        $(window).on('popstate', function () {
+            // For an iframe's window
+            iframe.contentWindow.history.back();
+            iframe.contentWindow.history.forward();
+
+            fetchAndInsert(location.pathname);
+
+        });
+    </script>    
+    
+</head>
+
+<body>
+	<div class="ie-stickyFooter">
+
+	<div class="site">
+    <div id="myheader" class="header">
+              <div class="header-inner container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <a class="navbar-brand" href="index.html" title="Egressos">
+                      <h1 class="hidden">
+                        <!--<img src="img/logo.png"  alt="Egressos">-->
+                      </h1>
+					  <!--<h1 class="logo">
+                        EGRESSOS
+                      </h1>-->   					  
+                    </a>
+                    <div class="navbar-slogan">                 
+                </div>                    
+                  </div>
+                  <div class="col-md-4">
+                   <a class="navbar-brand-right" href="http://prc.ifsp.edu.br/" target="_blank" title="IFSP PRC">
+                     <img src="img/ifsp.png" class="pull-right" style="width:200px; margin-top:5px;">                  
+                  </a>
+                  </div>                  
+                </div>
+              </div>
+       </div>
+
+        <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav ">
+          <li class="active"><a href="index.html">Home</a></li>
+			  
+			  
+			  <!--
+			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Bacharelados <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="engeletrica.html" target="iframeContent" rel="itemM">Engenharia Elétrica</a></li>
+                  <li><a href="engmecanica.html" target="iframeContent" rel="itemM">Engenharia Mecânica</a></li>                  
+                </ul>
+              </li>
+			  -->
+			       
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Licenciadas & Licenciados <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="licfisica.html" target="iframeContent" rel="itemM">Física</a></li>
+                </ul>
+              </li>
+			  
+			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Tecnólogas & Tecnólogos <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="tads.html #footer" target="iframeContent" rel="itemM">Análise e Desenvolvimento de Sistemas</a></li>
+                  <li><a href="tautomacao.html" target="iframeContent" rel="itemM">Automação Industrial</a></li>                  
+                </ul>
+              </li>             
+            </ul>
+			
+              <ul class="nav navbar-nav pull-right ">
+				<li><a href="noticias.html" target="iframeContent" rel="itemM"> Notícias</a></li>
+              	<li><a href="sobre.html" target="iframeContent" rel="itemM"> Sobre </a></li>
+              </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+        	
+			
+			
+			<div class="site-content container">
+			
+                <div  class="row">
+
+					<!-- <div class="col-md-12 page-body" > -->
+					<div id="page-body" class="col-md-12" >
+                    	<div class="row">
+                    	
+                            
+                            <iframe src="mainContent.html" name="iframeContent" id="frame-home"  
+                                    frameborder="0" allowfullscreen scrolling="NO" width="100%" onload="resizeIframe(this)" > </iframe>
+						
+						<script>
+              
+						// test resize do iframe recarrega a altura quando o redimencionamento for detectado
+							window.addEventListener("resize", function() {
+                var iframeWin = document.getElementById('frame-home');
+                
+  							resizeIframe(iframeWin);
+
+							}); 
+						</script>			
+							
+						<script>
+						//cancela o cache do iframe https://stackoverflow.com/questions/2648053/preventing-iframe-caching-in-browser
+							var _theframe = document.getElementById("frame-home");
+							_theframe.contentWindow.location.href = _theframe.src;
+						</script>
+						
+						
+						<script>
+						//altera o título da div principal com base no titulo do iframe
+							$("iframe" ).on('load',function() {
+							document.title = document.getElementById("frame-home").contentDocument.title;
+							});			
+						</script>					
+						
+                        
+                        </div>
+                    </div>
+					
+				 
+               
+                </div>
+                
+                
+			</div>
+
+    <footer class="footer">
+	<!-- https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ -->
+					<div class="container-fluid">
+						<span class="text-muted"><p>Projetos de Extensão com Egressas e Egressos - IFSP Câmpus Piracicaba - 2016-2017</p></span>                    
+					</div>
+    
+	</footer>
+	</div>
+	</div>
+
+</body>
+</html>

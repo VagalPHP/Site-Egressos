@@ -1,0 +1,366 @@
+/* 1 */
+#fb-root {
+  display: none;
+}
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+
+/* 2 */
+
+* {
+    margin: 0;
+}
+
+html, body {
+	
+	margin:0px;
+    padding:0px;
+    height: auto;
+    min-height: 100%;
+	
+    
+}
+
+html
+{
+	
+	font-family: "Arial", Arial, sans-serif;
+	
+	
+}
+div
+{
+	display:block;
+}
+
+p
+{
+	font-family:"Arial",Arial,sans-serif;
+}
+
+
+body.body
+{
+	
+    
+	/*margin: 0 0 70px; /* altura do seu footer, para ajustar com div dinamica*/ 
+	  
+	
+    /* bottom = footer height */   
+	background-color: #CCECD1;				
+	font-family: "Arial", Arial, sans-serif;
+	
+	
+	
+	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+h2
+{
+	font-family: "Arial", Arial, sans-serif;
+}
+
+h3
+{
+	font-family: "Arial", Arial, sans-serif;
+}
+
+h5
+{
+	
+    //text-justify;
+	padding:10px;	  
+	font-family: "Arial", Arial, sans-serif;
+}
+
+h6
+{
+	font-family: "Arial", Arial, sans-serif;
+}
+
+
+#page
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin-left: 0px;
+	margin-top:0px;
+	border-radius: 5px;	
+	font-weight: bold;
+	font-size: 150%;
+}
+/*!--background-image: radial-gradient(ellipse at center,#17882c 1%,#00510F 150%);*/
+.header {
+  color: black; 
+  background: #eeeff2;
+  
+}
+
+
+#conteudo
+{
+	color:#000;
+	border-radius:5px;
+	padding:10px;
+	background-color:#FFFFFF;
+}
+#face
+{
+	width: 350px;
+	height: 400px;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+#linke
+{
+	width: 350px;
+	height: 400px;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+#redes
+{
+	width: 30%;
+	height: 1017px;
+	background-color: rgb(230, 255, 230);
+	border-radius: 10px;
+	position: absolute;
+	margin-left: 10px;
+}
+
+
+#login
+{
+	background-color: #00b33c;
+	width: 250px;
+	height: 150px;
+	border-radius: 10px;
+	margin: auto;
+	position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+#button
+{
+	float: none;
+	border:none;
+	display:inline-block;
+	outline:0;
+	padding:6px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:#fff;
+	background-color:#000;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	color:#fff;
+	background-color:#009688;
+	width:auto;
+	
+}
+
+#img
+{
+	opacity:0.8;
+	filter:alpha(opacity=60);
+}
+.img{
+	 max-width:100%;
+	 height:20px;
+}
+
+/* 3 */
+
+.button2:hover 
+{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.item
+{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	text-decoration: none;
+	color: black;
+}
+
+.btn-primary
+{
+	background-color: #eeeff2;
+	border-radius: 5px; 
+	border-color:#00420c;
+	top: 35px; 
+	width: 130px; 
+	margin: 5px;
+	color:#000000;
+	text-align: center;
+}
+.btn-primary:hover
+{
+	background-color: #379936;
+	
+}
+
+
+
+/*
+#myCarrousel{
+	text-align:center;
+	margin-top:30px;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	min-height:760px;
+}
+*/
+
+/* 4 */
+
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  background: url(../img/logo.png) left top no-repeat;
+  width: 360px;
+  height:78px;
+  
+}
+.logo{
+	margin-left:70px; 
+	margin-top:0; 
+	font-family:Segoe UI; 
+	color:#C21E25; 
+	font-weight: 700;
+	font-size: 62px;	
+}
+/*
+.menu-fixo  {
+	position:fixed !important;
+	top: 0;
+	z-index: 99;
+	width:100%;
+}
+.rodape-fixo  {
+	position:static;
+	bottom: 0;	
+	z-index: 99;
+	width:100%;
+}
+*/
+.myFeed
+{	
+	
+	padding:10px;
+	
+		
+}
+
+
+#page-body {
+    height:100%;
+    background: #fff;	
+	box-shadow:-2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+
+
+
+/*https://css-tricks.com/snippets/css/sticky-footer/*/
+.container
+{
+	height:100%;
+}
+
+.footer {
+	box-shadow:-2px -1px 88px 0px rgba(0,0,0,0.17);
+	padding: 1.5rem;
+	padding-top:25px;
+	margin-top:20px;
+	background: #F8F8F8;
+	color: #999;
+	font-size: .85em;
+	text-align: center;
+	-webkit-box-flex: 0;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;
+}
+
+
+#myFeed{
+	text-align: justify;
+	
+	padding:30px;
+}
+.ie-stickyFooter { /* 1  http://www.design-fluide.com/01-09-2016/fixer-son-footer-en-bas-de-page-grace-a-flexbox/ */ 
+	display:flex;
+}
+
+.site {
+	/*
+	min-height: 100vh;  
+	display: flex;  	
+	flex-direction: column; 
+	*/
+	width:100%; /* 2 */
+	min-height:100vh;
+	display:-webkit-flex; /* 3 */
+	display:flex;
+	-webkit-flex-direction:column; /* 3 */
+	flex-direction:column;
+
+	
+}
+
+.site-content {
+	/*flex: 1;
+	flex-grow:1*/
+-webkit-flex-grow:1; /* 3 */
+	flex-grow:1;
+	
+}
+/*
+.card{
+	border: 1px solid #ddd;
+	box-shadow:0 0 2px rgba(0,0,0,0.24);	
+	margin: 20px 5px 0px 0px;
+	padding:10px;
+	padding-left: 50px;
+	border-radius: 10px;
+	background: #eeeff2;
+	
+}
+*/
+.tam{
+	min-height: 500px;	
+}
+.img-rede
+{
+	width:30px;
+	height:30px;
+	display: inline-block;
+	
+}
+.imgs-redes{
+	padding:0;	
+	margin-left:15px;
+	margin-right:0;
+}
+.p-contato{
+		padding-left: 20px;
+	padding-top: 2px;
+	margin-top:2px;	
+}
+
+
+
+
+
+
