@@ -343,18 +343,40 @@ h6
 }
 .img-rede
 {
-	width:36px;
-	height:36px;
+	height: 30px;
+	width: 30px;
 	display: inline-block;
+}
+
+.img-rede-sobre
+{
+	height: 30px;
+	width: 30px;
+	display: inline-block;	
+	margin-right: 5px;
+}
+
+.img-rede-cnpq
+{
+	height:33; 
+	width:33;
+	display: inline-block;
+	padding-top: 3px;
 	
 }
+.imgs-redes-sobre{
+	padding:0;	
+	margin-left:20px;
+	margin-right:0;
+}
+
 .imgs-redes{
 	padding:0;	
-	margin-left:15px;
+	margin-left:20px;
 	margin-right:0;
 }
 .p-contato{
-		padding-left: 20px;
+	padding-left: 20px;
 	padding-top: 2px;
 	margin-top:2px;	
 }
