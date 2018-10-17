@@ -259,17 +259,14 @@ h6
 
 .footer {
 	/*box-shadow:-2px -1px 88px 0px rgba(0,0,0,0.17);*/
-	padding: 1.5rem;
-	padding-top:25px;
-	margin-top:20px;
-	background: #F8F8F8;
-	color: #999;
+	
+	
 	font-size: .85em;
 	text-align: center;
 	-webkit-box-flex: 0;
 	-webkit-flex: none;
 	-ms-flex: none;
-	flex: none;
+	
 }
 
 
