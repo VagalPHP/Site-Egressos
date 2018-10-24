@@ -260,9 +260,8 @@ h6
 
 .footer {
 	/*box-shadow:-2px -1px 88px 0px rgba(0,0,0,0.17);*/
-	padding: 1.5rem;
 	padding-top:25px;
-	margin-top:20px;
+	margin-top:50px;
 	background: #F8F8F8;
 	color: #999;
 	font-size: .85em;
@@ -323,8 +322,8 @@ h6
 }
 .img-rede
 {
-	height: 30px;
-	width: 30px;
+	height: 24px;
+	width: 24px;
 	display: inline-block;
 }
 
@@ -338,8 +337,8 @@ h6
 
 .img-rede-cnpq
 {
-	height:33; 
-	width:33;
+	height: 24px; 
+	width: 24px;
 	display: inline-block;
 	padding-top: 3px;
 	
@@ -372,7 +371,9 @@ h6
 }
 
 .card-action{
-	min-height: 78px;
+	padding-top: 5px !important;
+	min-height: 2.8rem;
+	max-height: 2.8rem;
 }
 
 .card{
@@ -388,12 +389,7 @@ h6
 	margin-top: -1.9rem;
 }
 
-.myIframe {
-     position: relative;
-     padding-bottom: 65.25%;
-     padding-top: 30px;
-     height: 0;
-     overflow: auto; 
-     -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
-     border: solid black 1px;
-} 
+.img-card{
+	height: 7.4rem;
+	margin-top: 0.2rem;
+}
