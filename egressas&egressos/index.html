@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="extensao">
+    <meta http-Equiv="Cache-Control" Content="no-cache" />
+    <meta http-Equiv="Pragma" Content="no-cache" />
+    <meta http-Equiv="Expires" Content="0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function resizeIframe(iframe) {
+        iframe.height = '';
+        iframe.height = iframe.contentWindow.document.body.scrollHeight+"px";
+      }
+      $(window).on('popstate', function () {
+          // For an iframe's window
+          iframe.contentWindow.history.back();
+          iframe.contentWindow.history.forward();
+
+          fetchAndInsert(location.pathname);
+
+      });
+    </script>    
+    <title>Egressos IFSP</title>
+  </head>
+
+  <body>
+
+    <nav class="sidebar-custom show-on-medium-and-down hide-on-med-and-up green darken-1">
+      <div class="nav-wrapper container">
+
+      <i href="#" data-target="slide-out" class="material-icons left sidenav-trigger">menu</i>
+      <a href="http://prc.ifsp.edu.br/" class="brand-logo center"><img src="img/logobranco.png" style="width: 13rem; margin-top: 0.3rem;"></a>
+
+      <a href="index.html" class="hide-on-med-and-up"><i class="material-icons right">home</i></a>
+    </div>
+    </nav>
+  
+    <ul id="slide-out" class="sidenav">
+      <!--
+      <li><a class="subheader">Técnicas & Técnicos</a></li>
+      <li><a href="informaticaintegrado.html" class="waves-effect" target="iframeContent" rel="itemM"><i class="material-icons">public</i>Informática</a></li>
+      <li><a href="manutencaoautomotiva.html" class="waves-effect" target="iframeContent" rel="itemM"><i class="material-icons">drive_eta</i>Manutenção Automotiva</a></li>
+      <li><div class="divider"></div></li>
+      -->
+       <li><a href="tads.html" class="waves-effect" target="iframeContent" rel="itemM"><i class="material-icons">home</i>Página inicial</a></li>
+      <li><a class="subheader">Tecnólogas & Tecnólogos</a></li>
+      <li><a href="tads.html" class="waves-effect itemDL" target="iframeContent" rel="itemM"><i class="material-icons" style="margin-top: 0.6rem">devices_other</i>Análise e Desenvolvimento <div class="textoADS">de Sistemas</div></a></li>
+      <li><a href="tautomacao.html" class="waves-effect" target="iframeContent" rel="itemM"><i class="left"><img src="img/automacao-icon.png" style="width: 1.4rem; margin-top: 0.8rem"></i>Automação Industrial</a></li>
+      <li><div class="divider"></div></li>
+      <!--
+      <li><a class="subheader">Engenheiras & Engenheiros</a></li>
+      <li><a href="engcomputacao.html" class="waves-effect" target="iframeContent" rel="itemM"><i class="material-icons">computer</i>Computação</a></li>
+      <li><a href="engmecanica.html" class="waves-effect" target="iframeContent" rel="itemM"><i class="material-icons">settings</i>Mecânica</a></li>
+      <li><a href="engeletrica.html" class="waves-effect" target="iframeContent" rel="itemM"><i class="material-icons">offline_bolt</i>Elétrica</a></li>
+      <li><div class="divider"></div></li>
+      -->
+      <li><a class="subheader">Licenciadas & Licenciados</a></li>
+      <li><a href="licfisica.html" target="iframeContent" rel="itemM"><i class="material-icons">explore</i>Física</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Mais</a></li>
+      <li><a href="http://200.133.218.118:3017/limesurvey/index.php/624629/lang-pt-BR" target="blank" rel="itemM"><i class="material-icons">assignment_ind</i>Compartilar Informações</a></li>
+      <li><a href="noticias.html" target="iframeContent" rel="itemM"><i class="material-icons">import_contacts</i>Notícias</a></li>
+      <li><a href="sobre.html" target="iframeContent" rel="itemM"><i class="material-icons">supervised_user_circle</i>Projetos</a></li>
+      <li><div class="divider"></div></li>
+    </ul>
+    <div class="navbar-fixed">
+      <nav class="hide-on-med-and-down">
+        <div class="nav-wrapper green darken-1 hide-on-med-and-down">
+          <a href="http://prc.ifsp.edu.br/" class="brand-logo right"><img src="img/logobranco.png" style="width: 13rem; margin-top: 0.3rem;"></a>
+          <ul id="nav-mobile" class="left">
+            <li><a href="index.html"><i class="material-icons right">home</i></a></li>
+            <!--
+            <li><a class="dropdown-trigger" href="#!" data-target="tecnicos">Técnicas & Técnicos<i class="material-icons right">arrow_drop_down</i></p></a></li>
+            -->
+            <li><a class="dropdown-trigger" href="#!" data-target="tecnologos">Tecnólogas & Tecnólogos<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!--
+            <li><a class="dropdown-trigger itemMenu" href="#!" data-target="engenheiros">Engenheiras & Engenheiros<i class="material-icons right">arrow_drop_down</i></a></li>
+            -->
+            <li><a class="dropdown-trigger itemMenu" href="#!" data-target="licenciados">Licenciadas & Licenciados<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!--
+            <li><a class="dropdown-trigger itemMenu" href="#!" data-target="especialistas">Especialistas<i class="material-icons right">arrow_drop_down</i></a></li>
+            -->
+            <li><a target="_blank" href="http://200.133.218.118:3017/limesurvey/index.php/624629/lang-pt-BR" target="iframeContent" rel="itemM"><i class="material-icons right">assignment_ind</i></a></li>
+            <li><a href="noticias.html" target="iframeContent" rel="itemM"><i class="material-icons right">import_contacts</i></a></li>
+            <li><a href="sobre.html" target="iframeContent" rel="itemM"><i class="material-icons right">supervised_user_circle</i></a></li>
+
+            
+          </ul>
+          <ul id="licenciados" class="dropdown-content">
+            <li><a href="licfisica.html" target="iframeContent" rel="itemM">Física</a></li>
+          </ul>
+          <ul id="especialistas" class="dropdown-content">
+            <li><a href="especialistaedh.html" target="iframeContent" rel="itemM">Educação em Direitos Humanos</a></li>
+          </ul>
+          <ul id="tecnologos" class="dropdown-content">
+            <li><a href="tads.html" target="iframeContent" rel="itemM">Análise e Desenvolvimento de Sistemas</a></li>
+            <li><a href="tautomacao.html" target="iframeContent" rel="itemM">Automação Industrial</a></li>
+          </ul>
+          <ul id="engenheiros" class="dropdown-content">
+            <li><a href="engcomputacao.html" target="iframeContent" rel="itemM">Computação</a></li>
+            <li><a href="engeletrica.html" target="iframeContent" rel="itemM">Elétrica</a></li>
+            <li><a href="engmecanica.html" target="iframeContent" rel="itemM">Mecânica</a></li>
+          </ul>
+          <ul id="tecnicos" class="dropdown-content">
+            <li><a href="informaticaintegrado.html" target="iframeContent" rel="itemM">Informática</a></li>
+            <li><a href="manutencaoautomotiva.html" target="iframeContent" rel="itemM">Manutenção Automotiva</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  	<div class="site-content container">
+      <div  class="row">
+    		<div id="page-body" class="col m12 s12 l12" >
+          <div class="row">
+            <iframe src="mainContent.html" name="iframeContent" id="frame-home" frameborder="0" allowfullscreen scrolling="NO" style="width: 100%;" onload="resizeIframe(this)"> </iframe>
+            <script>
+  						window.addEventListener("resize", function() {
+                var iframeWin = document.getElementById('frame-home');
+  							resizeIframe(iframeWin);
+    					}); 
+    				</script>	
+            <script>
+  						var _theframe = document.getElementById("frame-home");
+  						_theframe.contentWindow.location.href = _theframe.src;
+    				</script>
+    				<script>
+              $("iframe" ).on('load',function() {
+    						document.title = document.getElementById("frame-home").contentDocument.title;
+    						});			
+    				</script>					
+    				
+          </div>
+        </div>  
+    	</div>
+    </div>
+    <footer class="page-footer green darken-1" style="height: 4rem; margin-top:250px; ">
+      <div class="container center">
+  			<p class="white-text">Projetos de Extensão com Egressas e Egressos - IFSP Câmpus Piracicaba - 2016-2018</p>                  
+  		</div>
+  	</footer>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+      });
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+    </script>
+  </body>
+</html>
